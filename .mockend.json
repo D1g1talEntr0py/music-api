@@ -1,12 +1,12 @@
 {
   "Artist": {
-    "name": { "string": {} },
+    "name": { "regexp": "[A-Z][a-z]{5,10}" },
     "age": { "int": { "min": 15, "max": 100 } },
     "albums": { "hasMany": "Album" }
   },
   "Album": {
     "artist": { "belongsTo": "Artist" },
-    "title": { "string": {} },
+    "title": { "loremWords": { "minLength": 5, "maxLength": 20 } },
     "genre": { "string": ["Rock", "Pop", "Metal", "Post-Hardcore", "Rap", "House", "Breakbeat", "Techno", "Progressive House"] },
     "releaseDate": {
       "dateTime": {
