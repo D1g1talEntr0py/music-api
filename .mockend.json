@@ -1,5 +1,18 @@
 {
-  "User": {
-    "title": { "string": {} }
+  "Artist": {
+    "name": { "string": {} },
+    "age": { "int": { "min": 15, "max": 100 } } },
+    "albums: { "hasMany": "Album" }
+  },
+  "Album": {
+    "artist": { "belongsTo": "Artist" },
+    "title": { "string": {} },
+    "genre": { "string": ["Rock", "Pop", "Metal", "Post-Hardcore", "Rap", "House", "Breakbeat", "Techno", "Progressive House"] }
+    "releaseDate": {
+      "dateTime": {
+        "min": "2010-01-01T00:00:00Z",
+        "max": "2021-12-31T23:59:59Z"
+      }
+    }
   }
 }
