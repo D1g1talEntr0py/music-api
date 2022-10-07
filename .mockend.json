@@ -2,7 +2,7 @@
   "Artist": {
     "name": { "string": {} },
     "age": { "int": { "min": 15, "max": 100 } } },
-    "albums: { "hasMany": "Album" }
+    "albums": { "hasMany": "Album" }
   },
   "Album": {
     "artist": { "belongsTo": "Artist" },
