@@ -7,7 +7,7 @@
   "Album": {
     "artist": { "belongsTo": "Artist" },
     "title": { "string": {} },
-    "genre": { "string": ["Rock", "Pop", "Metal", "Post-Hardcore", "Rap", "House", "Breakbeat", "Techno", "Progressive House"] }
+    "genre": { "string": ["Rock", "Pop", "Metal", "Post-Hardcore", "Rap", "House", "Breakbeat", "Techno", "Progressive House"] },
     "releaseDate": {
       "dateTime": {
         "min": "2010-01-01T00:00:00Z",
