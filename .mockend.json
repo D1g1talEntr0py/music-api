@@ -1,6 +1,6 @@
 {
   "Artist": {
-    "name": { "regexp": "[A-Z][a-z]{5,10}" },
+    "name": { "regexp": "[A-Z][a-z]{3,15}" },
     "age": { "int": { "min": 15, "max": 100 } },
     "albums": { "hasMany": "Album" }
   },
